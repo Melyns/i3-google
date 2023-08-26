@@ -1,7 +1,6 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-exec_always --no-startup-id feh --bg-center /LOCATION_TO_YOUR_WALLPAPER.png
-#touchpad
+#exec_always --no-startup-id feh --bg-center /LOCATION_TO_YOUR_WALLPAPER.png
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -9,9 +8,8 @@ exec_always --no-startup-id numlockx on
 
 bindsym XF86MonBrightnessUp exec brightnessctl s +5%
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
-#bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+d exec --no-startup-id /home/melyn/.config/rofi/launcher.sh
-bindsym Print exec --no-startup-id scrot -d 3 ~/Pictures/screenshots/%Y-%m-%d-%T.png
+#bindsym $mod+d exec --no-startup-id /home/melyn/.config/rofi/launcher.sh
+#bindsym Print exec --no-startup-id scrot -d 3 ~/Pictures/screenshots/%Y-%m-%d-%T.png
 
 #gaps config
 gaps inner 10
