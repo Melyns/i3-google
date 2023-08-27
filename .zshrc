@@ -14,8 +14,7 @@ alias pacmansyu='sudo pacman -Syu'
 alias lsl='ls -al --color=auto'
 alias ls='ls --color=auto'
 
-# memof auto solver pid script
-#alias memof='function _memof(){ ps -p $1 -o rss | awk '\''{printf "%.2f MB\n", $1/1024}'\''; };_memof'
+# memof pid auto solver script, usage: memof [program name]. it'll output the memory usage of that program
 alias memof='function _memof(){ pid=$(pidof $1); ps -p $pid -o rss | awk '\''{printf "%.2f MB\n", $1/1024}'\''; };_memof'
 
 alias treeonce='tree -d -L 1'
